@@ -5,6 +5,7 @@ Curso PHP Turno mañana - código 41107 Martes y Jueves
   2. Requisitos de software.
   3. Iniciando y probando el Entorno de desarrollo.
   4. ¿Dónde guardar mis archivos .php?
+  5. Nuestro primer archivo PHP , delimitadores
 
 ## ¿Qué es PHP?
 
@@ -33,3 +34,8 @@ Curso PHP Turno mañana - código 41107 Martes y Jueves
 > C://Xampp/.  
 > En C://Xampp/htdocs creamos una carpeta para trabajar
 
+## Nuestro primer archivo PHP , delimitadores, phpinfo()
+
+> Delimitadores 
+  de inicio <?php  
+  de fin ?>
