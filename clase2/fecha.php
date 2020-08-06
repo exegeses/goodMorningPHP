@@ -2,7 +2,7 @@
     //setlocale(LC_ALL, 'es_ES');
 
     $diaMes = date('d');
-    $mes = date('m');
+    $mes = date('n');
     $anio = date('Y');
     $diaSemana = date('w');
     if( $diaSemana == 0 ){
@@ -27,6 +27,45 @@
         $diaSemana = 'Sábado';
     }
 
+    switch ( $mes ){
+        case 1:
+            $mes = 'enero';
+            break;
+        case 2:
+            $mes = 'febrero';
+            break;
+        case 3:
+            $mes = 'marzo';
+            break;
+        case 4:
+            $mes = 'abril';
+            break;
+        case 5:
+            $mes = 'mayo';
+            break;
+        case 6:
+            $mes = 'junio';
+            break;
+        case 7:
+            $mes = 'julio';
+            break;
+        case 8:
+            $mes = 'agosto';
+            break;
+        case 9:
+            $mes = 'septiembre';
+            break;
+        case 10:
+            $mes = 'octubre';
+            break;
+        case 11:
+            $mes = 'noviembre';
+            break;
+        case 12:
+            $mes = 'diciembre';
+            break;
+    }
 
-    echo $diaSemana, ' ', $diaMes, '/', $mes, '/', $anio;
+    echo 'Hoy es ', $diaSemana, ' ', $diaMes, ' de ', $mes, ' de ', $anio;
 ?>
+
