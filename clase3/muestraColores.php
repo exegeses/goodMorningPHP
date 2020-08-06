@@ -5,6 +5,11 @@
                     'verde', 'amarillo', 'rosa',
                     'naranja','marron'
                 ];
+    $codigos = [
+                    '#03a', '#d00', '#a3a',
+                    '#0a3', '#ff0', '#e99',
+                    '#d60', '#500'
+                ];
 ?>
 <!doctype html>
 <html lang="en">
@@ -38,11 +43,20 @@
 <body>
     <h1>Muestra de colores</h1>
     <div id="muestras">
-        
+
+<?php
+    $n = 0;
+    $cantidad = count($colores);
+    while( $n < $cantidad ){
+?>
         <span style="background-color: #ccc;"></span>
-            nombre color
+            <?php echo $colores[$n] ?>
         <br>
-        
+<?php
+        $n++;
+    }
+?>
+
     </div>
 
 </body>
