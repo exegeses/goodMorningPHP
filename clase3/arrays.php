@@ -50,9 +50,9 @@
 <hr>
 <?php
     $clientes = [
-                    'Juan', 'Pérez', '34435654',
-                    'Diego', 'Gómez', '41435654',
-                    'Pablo', 'García', '29435654'
+                    'Juan', 'Pérez', 34435654,
+                    'Diego', 'Gómez', 41435654,
+                    'Pablo', 'García', 29435654
                 ];
 ?>
 ver archivo clientes.json
