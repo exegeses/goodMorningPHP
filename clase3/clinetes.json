@@ -1,0 +1,20 @@
+{
+  'clientes' :
+  [
+      {
+        'nombre': 'Juan',
+        'apellido':'Pérez',
+        'dni':'34435654'
+      },
+      {
+        'nombre':'Diego',
+        'apellido':'Gómez',
+        'dni':'41435654'
+      },
+      {
+        'nombre':'Pablo',
+        'apellido':'García',
+        'dni':'29435654'
+      }
+  ]
+}
