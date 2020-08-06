@@ -6,8 +6,9 @@
         'Sábado'
     ];
 
-    $n = 1;
-    while( $n < 15 ){
-        echo 'hola';
-        $n = $n+1;
+    $n = 0;
+    $cantidad = count($semana);
+    while( $n < $cantidad ){
+        echo $semana[$n],'<br>';
+        $n++; //$n = $n+1;
     }
