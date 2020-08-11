@@ -11,4 +11,7 @@
           /* bloque a repetir */      
     }    
 > 
-    
+    foreach( contenedor as auxiliar )  
+           /* bloque a repetir */   
+    }
+>
