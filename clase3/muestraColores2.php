@@ -49,8 +49,11 @@
     $cantidad = count($colores);
     while( $n < $cantidad ){
 ?>
-        <span style="background-color: <?php echo $codigos[$n]; ?>"></span>
-            <?php echo $colores[$n] ?>
+        <span style="
+                background-color: <?php echo $codigos[$n] ?>"></span>
+            <i style="color: <?php echo $codigos[$n] ?>">
+                <?php echo $colores[$n] ?>
+            </i>
         <br>
 <?php
         $n++;
