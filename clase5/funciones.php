@@ -28,6 +28,21 @@
         return $resultado;
     }
 
+    function dividir( $dividendo, $divisor )
+    {
+        if( $divisor == 0 ){
+            return 'El divisor no puede ser 0';
+        }
+        if(  is_numeric($dividendo) && is_numeric($divisor) ){
+            $resultado = $dividendo / $divisor;
+            return $resultado;
+        }
+        else{
+            return 'Ambos deben ser números';
+        }
+
+    }
+
 
     // llamado a ejecución
     bold('texto en negrita');
@@ -41,3 +56,11 @@
     bold( duplicar(5) ); //10<b></b><br>
     echo '<hr>';
     echo sumar( 5, 18);
+    echo '<hr>';
+    echo dividir('hola', 10);
+    echo '<br>';
+    echo dividir(25, 0);
+    echo '<br>';
+    echo dividir(25, 3.5);
+
+    
