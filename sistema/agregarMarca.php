@@ -10,28 +10,21 @@
     <main class="container">
         <h1>Alta de una marca</h1>
 <?php
-    if( $chequeo ){  
-?>
-            <div class="alert alert-succes">
-                Marca agregada correctamente.
-                <br>
-                <a href="adminMarcas.php" class="btn btn-outline-secondary">
-                    volver a panel
-                </a>
-            </div>
-<?php
-    } else {
-?>
-            <div class="alert alert-danger">
-                No se pudu agregar la Marca
-                <br>
-                <a href="adminMarcas.php" class="btn btn-outline-secondary">
-                    volver a panel
-                </a>
-            </div>
-<?php
+    $class = 'danger';
+    $mensaje = 'No se pudo agregar la Marca';
+    if( $chequeo ) {
+        $class = 'success';
+        $mensaje = 'Marca agregada correctamente';
     }
 ?>
+            <div class="alert alert-<?= $class ?>">
+                <?= $mensaje ?>
+                <br>
+                <a href="adminMarcas.php" class="btn btn-outline-secondary">
+                    volver a panel
+                </a>
+            </div>
+
     </main>
 
 <?php  include 'includes/footer.php';  ?>
