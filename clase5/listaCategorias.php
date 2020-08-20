@@ -3,6 +3,8 @@
     //conexión a server + selección de base
     require 'conexion.php';
 
+    print_r($link);
+
     $sql = "SELECT idCategoria, catNombre
                 FROM categorias";
     $resultado = mysqli_query( $link, $sql );
