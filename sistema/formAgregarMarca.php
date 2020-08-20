@@ -8,7 +8,7 @@
         <h1>Alta de una nueva marca</h1>
 
         <div class="bg-light border p-4">
-            <form action="agregarMarca" method="post">
+            <form action="agregarMarca.php" method="post">
                 Marca: <br>
                 <input type="text" name="mkNombre" class="form-control">
                 <br>
