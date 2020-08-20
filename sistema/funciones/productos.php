@@ -16,7 +16,8 @@
                   WHERE 
 						p.idMarca = m.idMarca
                     AND p.idCategoria = c.idCategoria";
-        $resultado = mysqli_query( $link, $sql );
+        $resultado = mysqli_query( $link, $sql )
+                        or die( mysqli_error($link) );
         return $resultado;
     }
 
