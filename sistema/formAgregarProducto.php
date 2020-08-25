@@ -69,7 +69,7 @@
 
                 <div class="form-group">
                     <label for="prdImagen">Imagen del Producto</label>
-                    <input type="file" name="prdImagen" class="form-control-file" id="prdImagen">
+                    <input type="file" name="prdImagen" class="form-control-file" id="prdImagen" required>
                 </div>
 
                 <button class="btn btn-dark mr-3 px-4">Agregar producto</button>

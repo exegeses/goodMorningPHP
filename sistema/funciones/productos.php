@@ -21,6 +21,21 @@
         return $resultado;
     }
 
+    /**
+     * subir archivo enviado a directorio productos
+     */
+    function subirImagen()
+    {
+        $prdImagen = 'noDisponible.jpg';
+        if( $_FILES['prdImagen']['error'] == 0 ){
+            $dir = 'productos/';
+            $tmp = $_FILES['prdImagen']['tmp_name'];
+            $prdImagen = $_FILES['prdImagen']['name'];
+            move_uploaded_file( $tmp, $dir.$prdImagen );
+        }
+        return $prdImagen;
+    }
+
     /*
      * listarProductos()
      * verProductoProID()
