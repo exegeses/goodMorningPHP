@@ -13,7 +13,11 @@
         <div class="bg-light border p-4">
             <form action="modificarCategoria.php" method="post">
                 Categoría: <br>
-                <input type="text" name="catNombre" class="form-control">
+                <input type="text" name="catNombre" 
+                       value="<?= $categoria['catNombre'] ?>"
+                       class="form-control">
+                <input type="hidden" name="idCategoria"
+                       value="<?= $categoria['idCategoria'] ?>">
                 <br>
                 <button class="btn btn-dark">Agregar categoría</button>
                 <a href="adminCategorias.php" class="btn btn-outline-secondary">
