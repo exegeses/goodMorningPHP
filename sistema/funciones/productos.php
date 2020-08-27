@@ -6,7 +6,8 @@
     function listarProductos()
     {
         $link = conectar();
-        $sql = "SELECT 
+        $sql = "SELECT  
+                        idProducto,
                         prdNombre, prdPrecio, 
                         p.idMarca, mkNombre,  
                         p.idCategoria, catNombre,
