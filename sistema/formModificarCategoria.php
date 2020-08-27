@@ -19,7 +19,7 @@
                 <input type="hidden" name="idCategoria"
                        value="<?= $categoria['idCategoria'] ?>">
                 <br>
-                <button class="btn btn-dark">Agregar categoría</button>
+                <button class="btn btn-dark">Modificar categoría</button>
                 <a href="adminCategorias.php" class="btn btn-outline-secondary">
                     volver a panel
                 </a>
