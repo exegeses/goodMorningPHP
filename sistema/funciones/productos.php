@@ -74,6 +74,7 @@
                         prdNombre, prdPrecio, 
                         p.idMarca, mkNombre,  
                         p.idCategoria, catNombre,
+                        prdStock,
                         prdPresentacion, prdImagen
 	              FROM 
 						productos p, marcas m, categorias c
@@ -84,7 +85,7 @@
         $resultado = mysqli_query( $link, $sql )
                         or die( mysqli_error($link) );
         $producto = mysqli_fetch_assoc($resultado);
-        return $resultado;
+        return $producto;
     }
 
     /*
