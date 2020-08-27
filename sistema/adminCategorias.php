@@ -34,7 +34,7 @@
                     <td><?= $categoria['idCategoria'] ?></td>
                     <td><?= $categoria['catNombre'] ?></td>
                     <td>
-                        <a href="formModificarCategoria.php" class="btn btn-outline-secondary">
+                        <a href="formModificarCategoria.php?idCategoria=<?= $categoria['idCategoria'] ?>" class="btn btn-outline-secondary">
                             Modificar
                         </a>
                     </td>
