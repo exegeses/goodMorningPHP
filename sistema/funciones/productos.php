@@ -106,6 +106,22 @@
         $prdPresentacion = $_POST['prdPresentacion'];
         $prdStock = $_POST['prdStock'];
         $prdImagen = subirImagen();
+        $idProducto = $_POST['idProducto'];
+
+        $link = conectar();
+        $sql = "UPDATE productos
+                SET prdnombre =  '".$prdNombre."',
+                    prdPrecio = ".$prdPrecio.",
+                    idMarca = ".$idMarca.",
+                    idCategoria = ".$idCategoria.",
+                    prdPresentacion = '".$prdPresentacion."',
+                    prdStock = ".$prdStock.",
+                    prdImagen =  '".$prdImagen."' 
+                WHERE idProducto =".$idProducto;
+
+        $resultado = mysqli_query( $link, $sql )
+                        or die(mysqli_error($link));
+        return $resultado;
     }
 
     /*
