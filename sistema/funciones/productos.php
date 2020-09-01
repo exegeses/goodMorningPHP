@@ -74,6 +74,9 @@
         return $resultado;
     }
 
+    /**
+     * @return array Array Asociativo con datos de un producto
+     */
     function verProductoPorID()
     {
         $idProducto = $_GET['idProducto'];
