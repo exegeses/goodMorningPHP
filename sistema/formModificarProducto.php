@@ -81,9 +81,12 @@
                         <br>
                         <img src="productos/<?= $producto['prdImagen'] ?>" class="img-thumbnail">
                     </label>
-                    <input type="file" name="prdImagen" class="form-control-file" id="prdImagen" required>
+                    <input type="file" name="prdImagen" class="form-control-file" id="prdImagen">
                 </div>
 
+                <input type="hidden" name="prdImagenOriginal"
+                       value="<?= $producto['prdImagen'] ?>">
+                
                 <input type="hidden" name="idProducto"
                        value="<?= $producto['idProducto'] ?>">
                 

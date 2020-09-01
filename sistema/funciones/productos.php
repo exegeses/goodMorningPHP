@@ -27,7 +27,16 @@
      */
     function subirImagen()
     {
+        //imagen predeterminada si no enviaron nada
+        // EN AGREGAR
         $prdImagen = 'noDisponible.jpg';
+
+        // imagen original en MODIFICAR si no enviaron nada
+        if( isset( $_POST['prdImagenOriginal'] ) ){
+            $prdImagen = $_POST['prdImagenOriginal'];
+        }
+
+        // si enviaron algo tanto en agregar como en modificar
         if( $_FILES['prdImagen']['error'] == 0 ){
             $dir = 'productos/';
             $tmp = $_FILES['prdImagen']['tmp_name'];
@@ -86,6 +95,17 @@
                         or die( mysqli_error($link) );
         $producto = mysqli_fetch_assoc($resultado);
         return $producto;
+    }
+
+    function modificarProducto()
+    {
+        $prdNombre = $_POST['prdNombre'];
+        $prdPrecio = $_POST['prdPrecio'];
+        $idMarca = $_POST['idMarca'];
+        $idCategoria = $_POST['idCategoria'];
+        $prdPresentacion = $_POST['prdPresentacion'];
+        $prdStock = $_POST['prdStock'];
+        $prdImagen = subirImagen();
     }
 
     /*
