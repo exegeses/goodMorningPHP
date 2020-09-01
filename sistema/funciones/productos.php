@@ -110,7 +110,7 @@
 
         $link = conectar();
         $sql = "UPDATE productos
-                SET prdnombre =  '".$prdNombre."',
+                SET prdNombre =  '".$prdNombre."',
                     prdPrecio = ".$prdPrecio.",
                     idMarca = ".$idMarca.",
                     idCategoria = ".$idCategoria.",
