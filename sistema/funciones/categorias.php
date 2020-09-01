@@ -26,6 +26,19 @@
         return $categoria;
     }
 
+    function agregarCategoria()
+    {
+        $catNombre = $_POST['catNombre'];
+        $link = conectar();
+        $sql = "INSERT INTO categorias
+                           ( catNombre )
+                        VALUES 
+                            ( '".$catNombre."' )";
+        $resultado = mysqli_query($link, $sql)
+        or die( mysqli_error($link) );
+        return $resultado;
+    }
+
     function modificarCategoria()
     {
         $idCategoria = $_POST['idCategoria'];
