@@ -14,7 +14,7 @@
             Volver a principal
         </a>
 
-        <table class="table table-bordered table-striped table-hover">
+        <table class="table table-bordered table-striped table-hover col-8 mx-auto">
             <thead class="thead-dark">
                 <tr>
                     <th>id</th>
@@ -39,7 +39,7 @@
                         </a>
                     </td>
                     <td>
-                        <a href="" class="btn btn-outline-secondary">
+                        <a href="formEliminarMarca.php?idMarca=<?= $marca['idMarca'] ?>" class="btn btn-outline-secondary">
                             Eliminar
                         </a>
                     </td>
