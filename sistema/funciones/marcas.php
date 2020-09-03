@@ -13,6 +13,19 @@
         return $resultado;
     }
 
+    function verMarcaPorID()
+    {
+        $idMarca = $_GET['idMarca'];
+        $link = conectar();
+        $sql = "SELECT idMarca, mkNombre
+                        FROM marcas
+                        WHERE idMarca = ".$idMarca;
+        $resultado = mysqli_query($link, $sql)
+                        or die( mysqli_error($link) );
+        $marca = mysqli_fetch_assoc($resultado);
+        return $marca;
+    }
+
     function agregarMarca()
     {
         //$mkNombre = checkDato( $_POST['mkNombre'] );
@@ -29,7 +42,7 @@
 
     function verProductoPorMarca()
     {
-        $idMarca = $_POST['idMarca'];
+        $idMarca = $_GET['idMarca'];
         $link = conectar();
         $sql = "SELECT 1
                     FROM productos
