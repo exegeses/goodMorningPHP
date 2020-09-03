@@ -14,7 +14,7 @@
         <div class="card border-danger col-6 mx-auto p-2">
             <div class="row">
                 <div class="col">
-                    <img src="productos/noDisponible.jpg" class="img-thumbnail">
+                    <img src="productos/<?= $producto['prdImagen'] ?>" class="img-thumbnail">
                 </div>
                 <div class="col text-danger">
                     <h2><?= $producto['prdNombre'] ?></h2>
@@ -38,6 +38,24 @@
                 </div>
             </div>
         </div>
+
+        <script>
+            Swal.fire({
+                title: '¿Desea eliminar el producto?',
+                text: "Esta acción no se puede deshacer.",
+                type: 'error',
+                showCancelButton: true,
+                cancelButtonColor: '#8fc87a',
+                cancelButtonText: 'No, no lo quiero eliminar',
+                confirmButtonColor: '#d00',
+                confirmButtonText: 'Si, lo quiero eliminar'
+            }).then((result) => {
+                if (!result.value) {
+                    //redirección a adminProductos
+                    window.location = 'adminProductos.php'
+                }
+            })
+        </script>
 
     </main>
 
