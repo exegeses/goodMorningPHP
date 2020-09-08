@@ -14,7 +14,7 @@
             Volver a principal
         </a>
 
-        <table class="table table-bordered table-striped table-hover">
+        <table class="table table-bordered table-striped table-hover col-8 mx-auto">
             <thead class="thead-dark">
                 <tr>
                     <th>id</th>
