@@ -53,6 +53,19 @@
         return $cantidad;
     }
 
+    function modificarMarca()
+    {
+        $idMarca = $_POST['idMarca'];
+        $mkNombre   = $_POST['mkNombre'];
+        $link = conectar();
+        $sql = "UPDATE marcas
+                        SET mkNombre = '".$mkNombre."'
+                      WHERE idMarca = ".$idMarca;
+        $resultado = mysqli_query( $link, $sql )
+        or die( mysqli_error($link) );
+        return $resultado;
+    }
+
     function eliminarMarca()
     {
         $idMarca = $_POST['idMarca'];
