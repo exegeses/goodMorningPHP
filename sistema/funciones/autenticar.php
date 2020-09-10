@@ -26,6 +26,14 @@
         else{
             // token de autenticación
             $_SESSION['login'] = 1;
+            //obtenemos datos de usuario
+            $datosUsuario = mysqli_fetch_assoc($resultado);
+            //registramos en una variable de sesión
+            // los datos del usuario
+            $_SESSION['datosUsuario'] = $datosUsuario['usuNombre'] . ' ' . $datosUsuario['usuApellido'];
+            $_SESSION['usuNombre'] = $datosUsuario['usuNombre'];
+            $_SESSION['usuApellido'] = $datosUsuario['usuApellido'];
+
             //redirección a admin
             header('location: admin.php');
         }
