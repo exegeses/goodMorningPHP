@@ -1,7 +1,7 @@
 <?php
 
     #### archivo de configuración global
-    //session_start();
+    session_start();
 
     // declaramos constantes de sistema
 
