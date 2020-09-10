@@ -31,7 +31,8 @@
                 $mensaje = 'Debe loguearse para operar el sistema.';
             }
 ?>
-        <div class="alert alert-danger col-8 mx-auto">
+        <div class="alert alert-danger col-8 mx-auto p-3">
+            <i class="fas fa-exclamation-triangle"></i>
             <?= $mensaje ?>
         </div>
 <?php
